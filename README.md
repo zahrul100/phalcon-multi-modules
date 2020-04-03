@@ -43,5 +43,15 @@ lalu ubah permision cache,```chmod 777 apps/cache```
 ## Project
 ### Routing
 Routing bisa dibedakan menjadi 2 yaitu secara **global** ataupun bisa secara **modul**
+
 untuk routing secara global,untuk routing global bisa dilihat pada direktori
 ```apps/config/routing.php```
+
+aturan pada routing global adalah 
+```host/:namamodules/:namacontroller/:namaaction/:namaparameter```
+
+jadi jika kita mengakses website dengan alamat berikut
+
+```example.phalcon/dashboard/index/index/1```
+
+maka kita akan kita akan diarahkan pada halaman modul ```dashboard``` dengan controller ```index``` yang memiliki action ```index``` dan mendapatkan paramater ```1```
