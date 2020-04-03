@@ -93,7 +93,7 @@ public $nama = "andi";
 
 ```
 
-Untuke menggunakan model pada controller bisa dengan menggunakan 
+Untuke menggunakan model tersebut pada controller bisa dengan menggunakan 
 
 **use Its\Example\Dashboard\Presentation\Web\Models\Users;**
 
