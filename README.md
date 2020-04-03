@@ -94,6 +94,7 @@ public $nama = "andi";
 ```
 
 Untuke menggunakan model pada controller bisa dengan menggunakan 
+
 **use Its\Example\Dashboard\Presentation\Web\Models\Users;**
 
 
