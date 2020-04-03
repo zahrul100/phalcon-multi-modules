@@ -71,10 +71,29 @@ contoh :
 
 ```mkdir apps/modules/dashboard/Presentation/Web/Models```
 
-lalu meregistrasikan autoloader untuk models pada ```apps/config/Module.php```
+lalu meregistrasikan autoloader untuk models pada ```apps/config/modules.dashboard/Module.php```
 
 lalu tambahkan ini pada registerNamespacesnya
 
 ``` 'Its\Example\Dashboard\Presentation\Web\Models' => __DIR__ . '/Presentation/Web/Models',```
+lalu buat models pada direktori **apps/modules/dashboard/Preswentation/Web/Models/**
+disini saya membuat models dengan nama **Users.php**
 
+```
+<?php
 
+namespace Its\Example\Dashboard\Presentation\Web\Models;
+
+use Phalcon\Mvc\Model;
+
+class Users extends Model
+{
+
+public $nama = "andi";
+
+}
+
+```
+
+Untuke menggunakan model pada controller bisa dengan menggunakan 
+**use Its\Example\Dashboard\Presentation\Web\Models\Users;**
