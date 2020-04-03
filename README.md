@@ -59,10 +59,7 @@ jadi jika kita mengakses website dengan alamat berikut
 
 maka kita akan kita akan diarahkan pada halaman modul ```dashboard``` dengan controller ```index``` yang memiliki action ```index``` dan mendapatkan paramater ```1```
 
-### Controller
-Controller dapat dibuat pada direktori
 
-```apps/modules/namamodules/Presentation/Web/Controller```
 
 ### Models
 Untuk Membuat model maka kita perlu membuat folder baru pada module terkait
@@ -97,3 +94,52 @@ public $nama = "andi";
 
 Untuke menggunakan model pada controller bisa dengan menggunakan 
 **use Its\Example\Dashboard\Presentation\Web\Models\Users;**
+
+### View
+buat folder baru  view
+
+```mkdir apps/modules/dashboard/Presentation/Web/view```
+
+untuk membuat view baru kita dapat membuat folder dengan **nama yang sama** dengan **controller**
+misal disini kita membuat folder dengan nama coba di direktori apps/modules/dashboard/Presentation/Web/view
+
+```mkdir coba ```
+lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,misal kita membuat **index.volt** pada folder tersebut
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>halo volt</h1>
+</body>
+</html>
+```
+### Controller
+Controller dapat dibuat pada direktori
+
+```apps/modules/namamodules/Presentation/Web/Controller```
+
+misal kita membuat controller dengan nama **CobaController.php**
+```
+<?php
+
+namespace Its\Example\Dashboard\Presentation\Web\Controller;
+
+use Its\Example\Dashboard\Presentation\Web\Models\Users;
+
+use Phalcon\Mvc\Controller;
+
+class CobaController extends Controller
+{
+    public function indexAction()
+    {
+         $nama = Users::findFirst(1);
+        echo $nama->nama;
+    }
+}
+```
