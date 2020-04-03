@@ -1,7 +1,8 @@
 # Menggunakan Phalcon-multi-modules
-#### Struktur direktori
-```
-PHALCON SKELETON
+#### Struktur direktori PHALCON SKELETON
+
+``
+
 `apps
     config
           config.php
@@ -23,5 +24,4 @@ public
 .htaccess
 composer.json`
 
-
-```
+``
