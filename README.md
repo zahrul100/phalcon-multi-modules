@@ -59,3 +59,22 @@ jadi jika kita mengakses website dengan alamat berikut
 
 maka kita akan kita akan diarahkan pada halaman modul ```dashboard``` dengan controller ```index``` yang memiliki action ```index``` dan mendapatkan paramater ```1```
 
+### Controller
+Controller dapat dibuat pada direktori
+
+```apps/modules/namamodules/Presentation/Web/Controller```
+
+### Models
+Untuk Membuat model maka kita perlu membuat folder baru pada module terkait
+
+contoh :
+
+```mkdir apps/modules/dashboard/Presentation/Web/Models```
+
+lalu meregistrasikan autoloader untuk models pada ```apps/config/Module.php```
+
+lalu tambahkan ini pada registerNamespacesnya
+
+``` 'Its\Example\Dashboard\Presentation\Web\Models' => __DIR__ . '/Presentation/Web/Models',```
+
+
