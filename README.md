@@ -2,7 +2,7 @@
 #### Struktur direktori
 
 PHALCON SKELETON
-apps
+`apps
     config
           config.php
           loader.php
@@ -21,6 +21,6 @@ public
     .htaccess
     index.php
 .htaccess
-composer.json
+composer.json`
 
 
