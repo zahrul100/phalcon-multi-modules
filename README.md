@@ -95,6 +95,32 @@ public $nama = "andi";
 Untuke menggunakan model pada controller bisa dengan menggunakan 
 **use Its\Example\Dashboard\Presentation\Web\Models\Users;**
 
+
+### Controller
+Controller dapat dibuat pada direktori
+
+```apps/modules/namamodules/Presentation/Web/Controller```
+
+misal kita membuat controller dengan nama **CobaController.php**
+```
+<?php
+
+namespace Its\Example\Dashboard\Presentation\Web\Controller;
+
+use Its\Example\Dashboard\Presentation\Web\Models\Users;
+
+use Phalcon\Mvc\Controller;
+
+class CobaController extends Controller
+{
+    public function indexAction()
+    {
+        //$nama = Users::findFirst(1);
+        echo "selamat datang di phalcon";
+    }
+}
+```
+
 ### View
 buat folder baru  view
 
@@ -119,27 +145,5 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
 </body>
 </html>
 ```
-### Controller
-Controller dapat dibuat pada direktori
 
-```apps/modules/namamodules/Presentation/Web/Controller```
-
-misal kita membuat controller dengan nama **CobaController.php**
-```
-<?php
-
-namespace Its\Example\Dashboard\Presentation\Web\Controller;
-
-use Its\Example\Dashboard\Presentation\Web\Models\Users;
-
-use Phalcon\Mvc\Controller;
-
-class CobaController extends Controller
-{
-    public function indexAction()
-    {
-         $nama = Users::findFirst(1);
-        echo $nama->nama;
-    }
-}
-```
+lalu kita dapat mengunjungi **example.local/dashboard/coba**
