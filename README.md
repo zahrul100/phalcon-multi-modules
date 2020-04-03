@@ -50,6 +50,7 @@ untuk routing secara global,untuk routing global bisa dilihat pada direktori
 dimana routing sudah diatur akan dideklarasikan secara otomatis jika terdapat modul,controller,index,dan paramater yang sesuai di direktori ```apps/modules``` tanpa meregistrasikan lagi pada file apps/config/routing.php
 
 aturan pada routing global adalah 
+
 ```host/:namamodules/:namacontroller/:namaaction/:namaparameter```
 
 jadi jika kita mengakses website dengan alamat berikut
