@@ -47,7 +47,7 @@ Routing bisa dibedakan menjadi 2 yaitu secara **global** ataupun bisa secara **m
 untuk routing secara global,untuk routing global bisa dilihat pada direktori
 ```apps/config/routing.php```
 
-dimana routing sudah diatur akan dideklarasikan secara otomatis jika terdapat modul,controller,index,dan paramater yang sesuai di direktori ```apps/modules``` tanpa meregistrasikan lagi pada file apps/config/routing.php
+dimana routing sudah diatur akan dideklarasikan secara otomatis jika terdapat modul,controller,index,dan paramater yang sesuai di direktori ```apps/modules``` tanpa meregistrasikan lagi pada file ```apps/config/routing.php```
 
 aturan pada routing global adalah 
 
@@ -73,6 +73,7 @@ lalu meregistrasikan autoloader untuk models pada ```apps/config/modules.dashboa
 lalu tambahkan ini pada registerNamespacesnya
 
 ``` 'Its\Example\Dashboard\Presentation\Web\Models' => __DIR__ . '/Presentation/Web/Models',```
+
 lalu buat models pada direktori **apps/modules/dashboard/Preswentation/Web/Models/**
 disini saya membuat models dengan nama **Users.php**
 
