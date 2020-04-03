@@ -46,7 +46,9 @@ Routing bisa dibedakan menjadi 2 yaitu secara **global** ataupun bisa secara **m
 
 untuk routing secara global,untuk routing global bisa dilihat pada direktori
 ```apps/config/routing.php```
-dimana routing akan dideklarasikan secara otomatis jika terdapat modul,controller,index,dan paramaeter yang sesuai
+
+dimana routing akan dideklarasikan secara otomatis jika terdapat modul,controller,index,dan paramater yang sesuai di direktori ```apps/modules``` tanpa meregistrasikan lagi
+
 aturan pada routing global adalah 
 ```host/:namamodules/:namacontroller/:namaaction/:namaparameter```
 
