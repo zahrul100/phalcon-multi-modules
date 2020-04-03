@@ -1,5 +1,5 @@
 # Menggunakan Phalcon-multi-modules
-#### Struktur direktori PHALCON SKELETON
+## Struktur direktori PHALCON SKELETON
 
 ```
 
@@ -25,3 +25,13 @@ public
 composer.json`
 
 ```
+
+## Persiapan
+### composer install
+```composer install```
+### Membuat folder cache
+Buat folder cache pada direktori apps
+``` mkdir apps/cache ```
+lalu ubah permision cache,```chmod 777 apps/cache```
+
+### 
