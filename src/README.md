@@ -158,6 +158,9 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
 </html>
 
 ```
+Jika ada __Error Permision write volt__ Jangan lupa untuk mengubah permision pada cache 
+
+```chmod 777 apps/cache```
 
 lalu kita dapat mengunjungi **example.local/dashboard/coba**
 
