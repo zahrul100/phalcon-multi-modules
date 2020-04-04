@@ -47,8 +47,8 @@ Berikut adalah solusinya :
 
 <a href="https://medium.com/@sendyivenyulian/cara-mengatasi-error-the-requested-url-was-not-found-apache2-di-linux-981a1b5b2e07">Configurasi untuk pengaturan apache routing</a>
 
-## Panduan 
-<a href="https://docs.google.com/document/d/1d7ENZ73SQklmw-sPChPGrMIjGeM-3qLXCtvXpPfXTS8/edit">Untuk panduan bisa dilihat disini</a>
+## Keterangan Struktur 
+<a href="https://docs.google.com/document/d/1d7ENZ73SQklmw-sPChPGrMIjGeM-3qLXCtvXpPfXTS8/edit">Untuk panduan keterangan struktur phalcon-multi-modules bisa dilihat disini</a>
 ## Project
 ### Routing
 Routing bisa dibedakan menjadi 2 yaitu secara **global** ataupun bisa secara **modul**
