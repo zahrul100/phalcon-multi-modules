@@ -34,7 +34,7 @@ Buat folder cache pada direktori apps
 ``` mkdir apps/cache ```
 lalu ubah permision cache,```chmod 777 apps/cache```
 
-**Jika kita membuka Project kita pada browser,Penampakannya akan seperti ini **
+***Jika kita membuka Project kita pada browser,Penampakannya akan seperti ini***
 
 ![Image description](https://drive.google.com/uc?export=view&id=1pf8mkmPRqFnH-Fo_2yVOYCr-7PBe0E_d)
 
