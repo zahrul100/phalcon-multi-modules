@@ -78,6 +78,7 @@ lalu buat models pada direktori **apps/modules/dashboard/Preswentation/Web/Model
 disini saya membuat models dengan nama **Users.php**
 
 ```
+
 <?php
 
 namespace Its\Example\Dashboard\Presentation\Web\Models;
@@ -87,9 +88,10 @@ use Phalcon\Mvc\Model;
 class Users extends Model
 {
 
-public $nama = "andi";
+public $nama = "Zizki";
 
 }
+
 
 ```
 
@@ -110,18 +112,30 @@ misal kita membuat controller dengan nama **CobaController.php**
 namespace Its\Example\Dashboard\Presentation\Web\Controller;
 
 use Its\Example\Dashboard\Presentation\Web\Models\Users;
-
 use Phalcon\Mvc\Controller;
 
 class CobaController extends Controller
 {
     public function indexAction()
     {
-        //$nama = Users::findFirst(1);
-        echo "selamat datang di phalcon";
+        echo 'coba module';
+        $user = new Users();
+        
+        $this->view->setVars([
+                "nama" =>$user->nama
+
+
+
+        ]
+
+
+
+        );
     }
 }
 ```
+setVars() milik IndexController berfungsi untuk
+memberikan nilai kepada variabel di halaman view milik IndexAction().
 
 ### View
 buat folder baru  view
@@ -143,8 +157,9 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
     <title>Document</title>
 </head>
 <body>
-    <h1>halo volt</h1>
+    <h1>Selamat Datang {{ nama }}</h1>
 </body>
+</html>
 </html>
 ```
 
