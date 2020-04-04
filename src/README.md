@@ -27,7 +27,7 @@ composer.json`
 ```
 
 ## Persiapan
-
+![Image description](https://drive.google.com/open?id=1WSmQRUjrXtNuOiRMqsKqsw7hrr8RS70Q)
 ### composer install
 jalankan ```composer install``` pada terminal
 ### Membuat folder cache
