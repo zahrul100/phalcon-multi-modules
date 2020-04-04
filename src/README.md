@@ -160,3 +160,4 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
 lalu kita dapat mengunjungi **example.local/dashboard/coba**
 
 ![Image description](https://drive.google.com/uc?export=view&id=1WSmQRUjrXtNuOiRMqsKqsw7hrr8RS70Q)
+
