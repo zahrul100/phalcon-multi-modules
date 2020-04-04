@@ -144,6 +144,7 @@ misal disini kita membuat folder dengan nama coba di direktori apps/modules/dash
 lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,misal kita membuat **index.volt** pada folder tersebut
 
 ```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,9 +153,10 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
     <title>Document</title>
 </head>
 <body>
-    <h1>halo volt</h1>
+    <h1>Selamat Datang {{ nama }}</h1>
 </body>
 </html>
+
 ```
 
 lalu kita dapat mengunjungi **example.local/dashboard/coba**
