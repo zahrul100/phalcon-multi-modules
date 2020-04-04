@@ -137,6 +137,8 @@ class CobaController extends Controller
 setVars() milik IndexController berfungsi untuk
 memberikan nilai kepada variabel di halaman view milik IndexAction().
 
+kita membuat variable di view dengan nama ```nama``` yang diisi dengan isi variabel ```$user```
+
 ### View
 buat folder baru  view
 
