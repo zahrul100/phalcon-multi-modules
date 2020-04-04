@@ -27,7 +27,6 @@ composer.json`
 ```
 
 ## Persiapan
-![Image description](https://drive.google.com/uc?export=view&id=1WSmQRUjrXtNuOiRMqsKqsw7hrr8RS70Q)
 ### composer install
 jalankan ```composer install``` pada terminal
 ### Membuat folder cache
@@ -35,7 +34,17 @@ Buat folder cache pada direktori apps
 ``` mkdir apps/cache ```
 lalu ubah permision cache,```chmod 777 apps/cache```
 
+**Jika kita membuka Project kita pada browser,Penampakannya akan seperti ini **
+
+![Image description](https://drive.google.com/uc?export=view&id=1pf8mkmPRqFnH-Fo_2yVOYCr-7PBe0E_d)
+
 ### Configurasi apache untuk routing 
+penggunaan apache pada linux saat pertama kali pada umumnya akan mengalami error seperti berikut:
+
+![Image description](https://drive.google.com/uc?export=view&id=1jKVzltJjpqekqfoUt47zVOosdAmucf_y)
+
+Berikut adalah solusinya :
+
 <a href="https://medium.com/@sendyivenyulian/cara-mengatasi-error-the-requested-url-was-not-found-apache2-di-linux-981a1b5b2e07">Configurasi untuk pengaturan apache routing</a>
 
 ## Panduan 
@@ -149,3 +158,5 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
 ```
 
 lalu kita dapat mengunjungi **example.local/dashboard/coba**
+
+![Image description](https://drive.google.com/uc?export=view&id=1WSmQRUjrXtNuOiRMqsKqsw7hrr8RS70Q)
