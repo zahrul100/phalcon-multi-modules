@@ -27,6 +27,7 @@ composer.json`
 ```
 
 ## Persiapan
+
 ### composer install
 jalankan ```composer install``` pada terminal
 ### Membuat folder cache
@@ -34,21 +35,11 @@ Buat folder cache pada direktori apps
 ``` mkdir apps/cache ```
 lalu ubah permision cache,```chmod 777 apps/cache```
 
-***Jika kita membuka Project kita pada browser,Penampakannya akan seperti ini***
-
-![Image description](https://drive.google.com/uc?export=view&id=1pf8mkmPRqFnH-Fo_2yVOYCr-7PBe0E_d)
-
 ### Configurasi apache untuk routing 
-penggunaan apache pada linux saat pertama kali pada umumnya akan mengalami error seperti berikut:
-
-![Image description](https://drive.google.com/uc?export=view&id=1jKVzltJjpqekqfoUt47zVOosdAmucf_y)
-
-Berikut adalah solusinya :
-
 <a href="https://medium.com/@sendyivenyulian/cara-mengatasi-error-the-requested-url-was-not-found-apache2-di-linux-981a1b5b2e07">Configurasi untuk pengaturan apache routing</a>
 
-## Keterangan Struktur 
-<a href="https://docs.google.com/document/d/1d7ENZ73SQklmw-sPChPGrMIjGeM-3qLXCtvXpPfXTS8/edit">Untuk panduan keterangan struktur phalcon-multi-modules bisa dilihat disini</a>
+## Panduan 
+<a href="https://docs.google.com/document/d/1d7ENZ73SQklmw-sPChPGrMIjGeM-3qLXCtvXpPfXTS8/edit">Untuk panduan bisa dilihat disini</a>
 ## Project
 ### Routing
 Routing bisa dibedakan menjadi 2 yaitu secara **global** ataupun bisa secara **modul**
@@ -87,6 +78,7 @@ lalu buat models pada direktori **apps/modules/dashboard/Preswentation/Web/Model
 disini saya membuat models dengan nama **Users.php**
 
 ```
+
 <?php
 
 namespace Its\Example\Dashboard\Presentation\Web\Models;
@@ -96,9 +88,10 @@ use Phalcon\Mvc\Model;
 class Users extends Model
 {
 
-public $nama = "andi";
+public $nama = "Zizki";
 
 }
+
 
 ```
 
@@ -119,18 +112,32 @@ misal kita membuat controller dengan nama **CobaController.php**
 namespace Its\Example\Dashboard\Presentation\Web\Controller;
 
 use Its\Example\Dashboard\Presentation\Web\Models\Users;
-
 use Phalcon\Mvc\Controller;
 
 class CobaController extends Controller
 {
     public function indexAction()
     {
-        //$nama = Users::findFirst(1);
-        echo "selamat datang di phalcon";
+        echo 'coba module';
+        $user = new Users();
+        
+        $this->view->setVars([
+                "nama" =>$user->nama
+
+
+
+        ]
+
+
+
+        );
     }
 }
 ```
+setVars() milik IndexController berfungsi untuk
+memberikan nilai kepada variabel di halaman view milik IndexAction().
+
+kita membuat variable di view dengan nama ```nama``` yang diisi dengan isi variabel ```$user```
 
 ### View
 buat folder baru  view
@@ -144,7 +151,6 @@ misal disini kita membuat folder dengan nama coba di direktori apps/modules/dash
 lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,misal kita membuat **index.volt** pada folder tersebut
 
 ```
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -156,13 +162,7 @@ lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,m
     <h1>Selamat Datang {{ nama }}</h1>
 </body>
 </html>
-
+</html>
 ```
-Jika ada __Error Permision write volt__ Jangan lupa untuk mengubah permision pada cache 
-
-```chmod 777 apps/cache```
 
 lalu kita dapat mengunjungi **example.local/dashboard/coba**
-
-![Image description](https://drive.google.com/uc?export=view&id=1WSmQRUjrXtNuOiRMqsKqsw7hrr8RS70Q)
-
