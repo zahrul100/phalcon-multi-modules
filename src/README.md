@@ -147,6 +147,8 @@ buat folder baru  view
 untuk membuat view baru kita dapat membuat folder dengan **nama yang sama** dengan **controller**
 misal disini kita membuat folder dengan nama coba di direktori apps/modules/dashboard/Presentation/Web/views
 
+lalu kita membuat folder baru dengan nama yang sama dengan controller di folder views
+karena controller dalam dokumentasi ini bernama cobaController maka kita membuat folder baru bernama **coba**
 ```mkdir coba ```
 
 lalu kita membuat file .volt yang sama dengan nama action pada folder **apps/modules/dashboard/Presentation/Web/views/coba**,misal kita membuat **index.volt** pada folder tersebut
