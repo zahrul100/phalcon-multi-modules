@@ -148,7 +148,8 @@ untuk membuat view baru kita dapat membuat folder dengan **nama yang sama** deng
 misal disini kita membuat folder dengan nama coba di direktori apps/modules/dashboard/Presentation/Web/views
 
 ```mkdir coba ```
-lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,misal kita membuat **index.volt** pada folder tersebut
+
+lalu kita membuat file .volt yang sama dengan nama action pada folder **apps/modules/dashboard/Presentation/Web/views/coba**,misal kita membuat **index.volt** pada folder tersebut
 
 ```
 <!DOCTYPE html>
