@@ -142,10 +142,10 @@ kita membuat variable di view dengan nama ```nama``` yang diisi dengan isi varia
 ### View
 buat folder baru  view
 
-```mkdir apps/modules/dashboard/Presentation/Web/view```
+```mkdir apps/modules/dashboard/Presentation/Web/views```
 
 untuk membuat view baru kita dapat membuat folder dengan **nama yang sama** dengan **controller**
-misal disini kita membuat folder dengan nama coba di direktori apps/modules/dashboard/Presentation/Web/view
+misal disini kita membuat folder dengan nama coba di direktori apps/modules/dashboard/Presentation/Web/views
 
 ```mkdir coba ```
 lalu kita membuat file .volt yang sama dengan nama action pada folder **coba**,misal kita membuat **index.volt** pada folder tersebut
